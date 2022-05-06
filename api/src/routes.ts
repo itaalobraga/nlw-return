@@ -19,7 +19,5 @@ routes.post("/feedbacks", async (req, res) => {
 
     await submitFeedbackUseCase.execute({type, comment, screenshot})
 
-    
-
     return res.status(201).send();
 });
